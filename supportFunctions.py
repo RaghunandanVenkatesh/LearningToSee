@@ -115,13 +115,13 @@ def computeConfusionMatrix(y, yHat, verbose = True):
     accuracy = float(TP+TN)/len(y)
     
     if verbose:
-        print 'Confusion Matrix:'
-        print cm
-        print 'Recall (TPR) = ' + str(round(recall,3))  + \
-            ' (Portion of fingers that we "caught")'
-        print 'Precision (PPV) = ' + str(round(precision,3)) + \
-            '(Portion of predicted finger pixels that were actually finger pixels)'
-        print 'Accuracy = ' + str(round(accuracy,3))
+        print ('Confusion Matrix:')
+        print (cm)
+        print ('Recall (TPR) = ' + str(round(recall,3))  + \
+            ' (Portion of fingers that we "caught")')
+        print ('Precision (PPV) = ' + str(round(precision,3)) + \
+            '(Portion of predicted finger pixels that were actually finger pixels)')
+        print ('Accuracy = ' + str(round(accuracy,3)))
     
     return cm, accuracy, recall, precision
 
